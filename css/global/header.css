@@ -43,7 +43,7 @@
     gap: 20px;
   }
   .header-menu a {
-    background-color: var(--cor-11);
+    background: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
