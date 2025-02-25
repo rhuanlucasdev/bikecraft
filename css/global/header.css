@@ -4,6 +4,8 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
@@ -17,24 +19,23 @@
 }
 
 .header-menu a {
-  color: var(--cor-0);
-  padding: 16px 0;
   display: inline-block;
+  padding: 16px 0px;
   position: relative;
 }
 
-.header-menu a::after {
-  position: absolute;
+.header-menu a:after {
   content: "";
   display: block;
   height: 2px;
-  width: 0;
+  width: 0px;
   background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
+  position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover:after {
   width: 100%;
 }
 
@@ -48,9 +49,9 @@
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background: var(--cor-10);
+    background-color: var(--cor-10);
   }
-  .header a::after {
+  .header a:after {
     display: none;
   }
 }
